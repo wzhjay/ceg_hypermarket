@@ -1,0 +1,69 @@
+.jumbotron {  position: relative;  padding: 40px 0;  color: #fff;  text-align: center;  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);  background: #FF6600; /* Old browsers */  background: -moz-linear-gradient(45deg,  #FF6600 0%, #003399 100%); /* FF3.6+ */  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#FF6600), color-stop(100%,#003399)); /* Chrome,Safari4+ */  background: -webkit-linear-gradient(45deg,  #FF6600 0%,#003399 100%); /* Chrome10+,Safari5.1+ */  background: -o-linear-gradient(45deg,  #FF6600 0%,#003399 100%); /* Opera 11.10+ */  background: -ms-linear-gradient(45deg,  #FF6600 0%,#003399 100%); /* IE10+ */  background: linear-gradient(45deg,  #FF6600 0%,#003399 100%); /* W3C */  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#003399',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);     -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);          box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);}.jumbotron h1 {  font-size: 80px;  font-weight: bold;  letter-spacing: -1px;  line-height: 1;}.jumbotron p {  font-size: 24px;  font-weight: 300;  line-height: 1.25;  margin-bottom: 30px;}/* Link styles (used on .masthead-links as well) */.jumbotron a {  color: #fff;  color: rgba(255,255,255,.5);  -webkit-transition: all .2s ease-in-out;     -moz-transition: all .2s ease-in-out;          transition: all .2s ease-in-out;}.jumbotron a:hover {  color: #fff;  text-shadow: 0 0 10px rgba(255,255,255,.25);}
+
+.panel {
+			float: left;
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			position: relative;
+}
+
+/* -- make sure to declare a default for every property that you want animated -- */
+.panel .hover {	cursor:pointer;
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100px;
+	height: 100px;
+	border: 1px solid rgba(255,255,255,0);
+	background: url('images/leaf-drop.jpg') no-repeat 0 100px fixed;
+
+	-moz-box-shadow: 0 1px 6px rgba(0,0,0,.9);
+	-webkit-box-shadow: 0 1px 6px rgba(0,0,0,.9);
+	box-shadow: 0 1px 6px rgba(0,0,0,.9);
+
+	/* -- transition is the magic sauce for animation -- */
+	-o-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+.panel .hover:hover {
+	top: -50px;
+	left: -50px;
+	z-index: 200;
+	width: 200px;
+	height: 200px;
+	border: 1px solid rgba(255,255,255,.1);
+
+	box-shadow: 0 15px 15px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 15px 15px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 15px 15px rgba(0,0,0,.1);
+}
+		
+#category-nav {
+	padding: 0px 0px 0px 0px;
+	margin: 10px 45px;
+}
+
+#carousel-nav {
+	position: relative;
+	top: 10px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	width: 800px;
+	height: 600px;
+}
+
+#right_nav_bar {
+	position: relative;
+	margin: 10px 4px;
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	width: 245px;	float: right;
+}#recommend_right_nav {	display:inline;	position: relative;	margin: 10px 4px;	padding: 10px 10px 10px 10px;	background-color: white;	border: 1px solid #DDD;	-webkit-border-radius: 4px;	-moz-border-radius: 4px;	border-radius: 4px;	width: 245px;	float: right;}.recommend_box {	position: relative;	margin: 5px 10px;	padding: 10px 10px 10px 10px;	background-color: white;	border: 1px solid #DDD;	-webkit-border-radius: 4px;	-moz-border-radius: 4px;	border-radius: 4px;	width: 206px;	float: right;}.recommend_box_lable{	position: relative;	left:-10px;	top:-12px;}#side-bar {	display:inline;	position: relative;	margin: 13px 23px;	background-color: white;	float: right;	width: 250px; }#display_content {	border-radius: 4px;	display: block;	position: relative;	padding: 10px 10px 10px 10px;	margin: 140px 20px;	width: 820px;}#right_content {	border-radius: 4px;	display: block;	position: relative;	padding: 10px 10px 10px 10px;	margin: 10px 20px;	width: 820px;}.product {	border: 2px solid #FFF;	position: relative;	float: left;	padding: 2px;	margin: 2px 16px;	line-height: 1.5;	overflow: hidden;	width: 224px;	height: 360px;}.product-content {	position: absolute;	background-color: white;		border-color: white;	margin: 0;	padding: 2px;	z-index: 1;	max-width: 100%;	max-height: 100%;}.product:hover {	border: 2px solid #DDD;}.productImg {	width: 220px;	height: 220px;	overflow: hidden;	display: table-cell;	text-align: center;	vertical-align: middle;}.product_img {	margin: 0px 0px;	padding: 0px 0px 0px 0px;}.productPrice {	font-family: 'arial','verdana',sans-serif!important;	font-size: 11px;	color: #C00;	line-height: 12px;	margin: 0px 0px;	padding: 0px 0px 0px 0px;}.productName {	font:bold 11px Georgia, serif;	margin: 0px 0px;	padding: 0px 0px 0px 0px;}.productManu {	font-size: 10px;	margin: 0px 0px;	padding: 0px 0px 0px 0px;}.add_shopping_cart {	font-size: 10px;	margin: 0px 0px;	padding: 0px 0px 0px 0px;}.productCateMainName {	font-size: 11px;	margin: 0px 0px;	padding: 0px 0px 0px 0px;}.productCateName {	font-size: 11px;}.productTitle .productName .productManu .productCateMainName .productCateName {	font-family: 'arial','verdana',sans-serif;	color: #DDD;}.productTitle:hover{	color: #CCC;}.productName:hover {	color: #CCC;}.productManu a:hover{	color: #C00;}.productCateMainName a:hover{	color: #C00;}.productCateName:hover {	color: #CCC;}.productCateName {	margin: 0px 0px;	padding: 0px 0px 0px 0px;}.recommend-productImg {	position: relative;	left:45px;	top: 5px;	width: 100px;	height: 100px;	display: table-cell;	text-align: center;	vertical-align: middle;}.recommend-product-info {	position: relative;	left:0px;	top: 5px;}div {display: block;}#search_lable {	position: relative; 	top: -13px;	left: -11px;}.product_promotion_lable {	position: relative; 	top: -6px;	left: -4px;}.product_discount_lable {	position: relative; 	top: -6px;	left: -4px;}.usual_price {	font-size: 10px;	color: #000;	text-decoration:line-through;}body {	//background-color: #000;}.login {	position: relative;	margin: 30px 30px;	padding: 10px 10px 10px 10px;	background-color: white;	border: 1px solid #DDD;	-webkit-border-radius: 4px;	-moz-border-radius: 4px;	border-radius: 4px;	width:320px;}.login_lable {	position: relative; 	top: -13px;	left: -11px;}.productBarcode {	visibility:hidden;	display:none;}.productStoreID {	visibility:hidden;	display:none;}.quantity {	padding: 0px 0px;	width:12px;}

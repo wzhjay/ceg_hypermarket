@@ -1,0 +1,1 @@
+<?php $this->load->view('layouts/banner'); ?><div class="container">	<div id="side-bar">	<?php $this->load->view('layouts/admin_right_nav'); ?>	</div>	<section id='right_content'>		<p>Delete Transaction Success!</p>		<p><?php echo anchor('admin/viewTrans/'.$this->session->userdata('store_id'), 'Go Back'); ?></p>	</section></div>
